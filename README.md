@@ -8,13 +8,14 @@ This is not a fork of https://github.com/sergev/4.4BSD-Lite2, which contains the
 ## How to build and play
 
 ```shell
-$ ./build.sh
+   mkdir build && cd build
+   cmake .. && make
 ```
 
 This build three executables:
-* `objs/test_init`  TCP three-way handshake, you can step through code with `GDB`
-* `objs/test_pigeon`  ICMP echo request/response
-* `objs/test_tun`  Connect to host with TAP/TUN device. (TODO: more instructions)
+* `build/test_init`  TCP three-way handshake, you can step through code with `GDB`
+* `build/test_pigeon`  ICMP echo request/response
+* `build/test_tun`  Connect to host with TAP/TUN device. (TODO: more instructions)
 
 This TCP/IP stack is alive, using tap/tun device on Linux. (WIP)
 
@@ -23,3 +24,7 @@ This TCP/IP stack is alive, using tap/tun device on Linux. (WIP)
 ## See also
 
 For running recent FreeBSD TCP/IP stack in user mode, take a look at https://github.com/pkelsey/libuinet and https://github.com/cloudius-systems/osv.
+
+## cmake
+
+this respository is forked from [chenshuo](https://github.com/chenshuo/4.4BSD-Lite2), I mv directory lib and sys into kernel and use cmake to control the compile process.

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "../lib/tcpv2.h"
+#include "../kernel/lib/tcpv2.h"
 #include "../tools/pcap.h"
 
 extern int tcp_do_rfc1323;

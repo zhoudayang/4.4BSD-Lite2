@@ -14,7 +14,7 @@
 #include <sys/ioctl.h>
 #include <sys/time.h>
 
-#include "../lib/tcpv2.h"
+#include "../kernel/lib/tcpv2.h"
 
 void pffasttimo(void *);  // run every 200ms
 void pfslowtimo(void *);  // run every 500ms
